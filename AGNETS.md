@@ -1,4 +1,4 @@
-# 个人编码偏好
+# 用户编码偏好
 
 ## 通信风格
 - **语言**：用中文表达想法，代码注释用英文
@@ -16,48 +16,37 @@
 - 敏感操作前必须确认（rm -rf、git reset --hard 等）
 - git 提交前检查是否有敏感信息
 
-## 常用 Agent
-- **linus-reviewer**：需要代码审查或技术决策分析时使用
-  - 触发方式："用 linus-reviewer 分析" 或 "用 Linus 的视角"
+## git 使用风格
+- 提交信息使用 Conventional Commit
+- 原子化每次提交
+- 每次提交后，最新提交指向的仓库状态都必须为一个稳定的状态
+- 若某次提交后 submodule 干净了，需要在主仓库提交 submodule 的更新
 
-## 常用工具
+# 用户小巧思
 
-### 搜索网页
-- **webSearch-Tongyi**: 使用统一搜索引擎（如 Google、Bing）进行网页搜索
+## 用户使用 chezmoi 作为配置文件非敏感部分统一管理工具
 
-### 查看官方文档
-1. **resolve-library-id** - 解析库名到 Context7 ID
-2. **get-library-docs** - 获取最新官方文档
+## 用户使用 1password-cli 作为配置文件敏感部分统一管理工具
 
-### 搜索真实代码
-- **searchGitHub** - 搜索 GitHub 上的实际使用案例
+## 用户偏好使用 命令行工具 执行 git 操作和 git 远程仓库操作
 
-### Codex 编码任务自动化
 
-使用 `codex-caller` skill 规范化 Codex 调用。
+# 常用 Mcp 工具
 
-**触发条件**（满足任一即触发）：
-1. 用户显式提及 "codex" 或 "编写代码"
-2. 用户使用 `/codex` 斜杠命令
-3. 用户请求明确编码任务（"实现"、"添加"、"重构"等）
+### webSearch-Tongyi: 使用统一搜索引擎（如 Google、Bing）进行网页搜索
 
-**默认参数**：
-- cwd: 当前项目根目录
-- approval-policy: on-failure
-- sandbox: workspace-write
+### Context7：官方文档聚合搜索工具
 
-**参数覆盖**：
-用户可显式指定参数覆盖默认值，例如：
-- "在 /tmp/other-项目 中用 codex" → 覆盖 cwd
-- "用 untrusted 模式" → 覆盖 approval-policy
+# 常用 Cli 工具
 
-**工作流**：
-1. 检测到编码意图
-2. 使用默认参数或用户指定参数
-3. 调用 Codex 处理
-4. 返回 Codex 结果给用户
+### op：1password-cli
+
+### chezmoi：dotfiles 管理工具
+
+### gh：GitHub cli
 
 
 
-## 注意事项
+
+# 再次强调
 - gh cli 已经 auth 并且可以使用
