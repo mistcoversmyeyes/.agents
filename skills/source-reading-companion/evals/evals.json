@@ -1,0 +1,26 @@
+{
+  "skill_name": "source-reading-companion",
+  "evals": [
+    {
+      "id": 0,
+      "name": "cfgm-clear-purpose",
+      "prompt": "我们读一下 VBox 的 CFGM 配置管理器，我想搞懂它的两层 include 体系是怎么解析的。",
+      "expected_output": "确认分类(系统软件/配置)+提议阅读路径并等确认，不堆砌长篇，平等讨论语气",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "tsc-calibration-clear-purpose",
+      "prompt": "带我看看 TM 里 TSC 是怎么校准的。",
+      "expected_output": "顺着明确目的开读，最多一句话确认视角，提议路径待确认，一次一个点",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "ambiguous-single-function",
+      "prompt": "这个 tmR3TimerQueueRun 函数我看不太懂，帮我理一下。",
+      "expected_output": "不为走流程而过度追问分类，顺势开读；一次讲一个点；带 file:line",
+      "files": []
+    }
+  ]
+}
