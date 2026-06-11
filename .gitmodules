@@ -1,0 +1,3 @@
+[submodule "skills/doc-harness"]
+	path = skills/doc-harness
+	url = git@github.com:mistcoversmyeyes/.agents-doc-harness.git
