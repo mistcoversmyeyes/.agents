@@ -1,3 +1,3 @@
-[submodule "skills/doc-harness"]
-	path = skills/doc-harness
-	url = git@github.com:mistcoversmyeyes/.agents-doc-harness.git
+[submodule "plugins/harness-forge"]
+	path = plugins/harness-forge
+	url = git@github.com:mistcoversmyeyes/harness-forge.git
